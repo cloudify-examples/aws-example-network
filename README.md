@@ -3,6 +3,19 @@
 
 Amazon's [VPC Scenario 2](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Scenario2.html) is the classic network architecture. It can support public-facing and private components.
 
+### Resources Created
+
+  * A `vpc`.
+  * An `internet_gateway`.
+  * A `public_subnet`.
+  * A `private_subnet`.
+  * A `public_subnet_routetable`.
+  * A `private_subnet_routetable`.
+  * A `route_public_subnet_internet_gateway`.
+  * A `nat_gateway_ip` - created with the `update-blueprint.yaml`.
+  * A `nat_gateway` - created with the `update-blueprint.yaml`.
+  * A `route_private_subnet_nat_gateway` - created with the `update-blueprint.yaml`.
+
 
 ## Compatibility
 
@@ -32,9 +45,9 @@ If you do not provide your own `deployment inputs` below, you must add these sec
 
 On your Cloudify Manager, navigate to `Local Blueprints` select `Upload`.
 
-_Hint: You may provide the URL to the github archive, [right-click and copy URL](https://github.com/cloudify-examples/vpc-scenario2-blueprint/archive/master.zip), or download the archive and provide the archive as an attachment to upload._
+[Right-click and copy URL](https://github.com/cloudify-examples/vpc-scenario2-blueprint/archive/master.zip). Paste where it says `Enter blueprint url`. Provide a blueprint name, such as `aws-vpc-scenario2` in the field labeled `blueprint name`. Select `simple-blueprint.yaml` from `Blueprint filename` menu.
 
-After the new blueprint has been created, select `Deploy`.
+After the new blueprint has been created, click the `Deploy` button.
 
 Navigate to `Deployments`, find your new deployment, select `Install` from the `workflow`'s menu. At this stage, you may provide your own values for any of the default `deployment inputs`.
 
@@ -43,10 +56,9 @@ Navigate to `Deployments`, find your new deployment, select `Install` from the `
 
 In order to provide outbound internet access to the private subnet, you can update the deployment.
 
-Navigate to `Deployments`, find your deployment, click on it. Once the deployment's page has loaded, click the `Update Deployment` button. In the dialog, provide the blueprint archive upload. This time, select `update-blueprint.yaml` as the blueprint file
-
+Navigate to `Deployments`, find your deployment, click on it. Once the deployment's page has loaded, click the `Update Deployment` button. [Right-click and copy URL](https://github.com/cloudify-examples/vpc-scenario2-blueprint/archive/master.zip). Paste where it says `Enter new blueprint url`. This time, select `update-blueprint.yaml` from `Blueprint filename` menu.
 
 
 ## Uninstallation
 
-Navigate to the deployment and select `Uninstall`.
+Navigate to the deployment and select `Uninstall`. When the uninstall workflow is finished, select `Delete deployment`.
