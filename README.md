@@ -39,6 +39,14 @@ After the new blueprint has been created, select `Deploy`.
 Navigate to `Deployments`, find your new deployment, select `Install` from the `workflow`'s menu. At this stage, you may provide your own values for any of the default `deployment inputs`.
 
 
+## Update Deployment
+
+In order to provide outbound internet access to the private subnet, you can update the deployment.
+
+Navigate to `Deployments`, find your deployment, click on it. Once the deployment's page has loaded, click the `Update Deployment` button. In the dialog, provide the blueprint archive upload. This time, select `update-blueprint.yaml` as the blueprint file
+
+
+
 ## Uninstallation
 
 Navigate to the deployment and select `Uninstall`.
