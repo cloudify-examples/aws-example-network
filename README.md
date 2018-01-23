@@ -19,7 +19,7 @@ Upload the required plugins:
 _Check the blueprint for the exact version of the plugin._
 
 
-If you do not override the default inputs, these are required as secrets:
+If you do not override the default inputs during the `deployments create` phase below, you must have these secrets in your Cloudify Manager `tenant`:
 
   * aws_access_key_id
   * aws_secret_access_key
@@ -34,7 +34,7 @@ On your Cloudify Manager, navigate to `Local Blueprints` select `Upload`.
 
 Once you see the new blueprint, select `Deploy`.
 
-Navigate to `Deployments`, find your `deployment` select `Install` from the `workflow`'s menu.
+Navigate to `Deployments`, find your `deployment` select `Install` from the `workflow`'s menu. At this stage, provide your own values for any of the default `inputs` values.
 
 
 ## Uninstallation
