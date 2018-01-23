@@ -26,11 +26,11 @@ If you do not override the default inputs, these are required as secrets:
 
 On your Cloudify Manager, navigate to `Local Blueprints` select `Upload`.
 
-Once you see the new `blueprint`, "aws", select `Deploy`.
+Once you see the new blueprint, select `Deploy`.
 
-Navigate to `Deployments`, select the "aws" `deployment`, select `Execute Workflow` button and select `Install`.
+Navigate to `Deployments`, find your `deployment` select `Install` from the `workflow`'s menu.
 
 
 ## Uninstallation
 
-Navigate to the `aws` deployment and select `Uninstall`.
+Navigate to the deployment and select `Uninstall`.
