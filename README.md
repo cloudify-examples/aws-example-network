@@ -4,6 +4,12 @@
 Amazon's [VPC Scenario 2](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Scenario2.html) is the classic network architecture. It can support public-facing and private components.
 
 
+## Compatibility
+
+Tested with:
+  * Cloudify 4.2
+
+
 ## Pre-installation steps
 
 Upload the required plugins:
