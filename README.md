@@ -19,7 +19,7 @@ Upload the required plugins:
 _Check the blueprint for the exact version of the plugin._
 
 
-If you do not override the default inputs during the `deployments create` phase below, you must have these secrets in your Cloudify Manager `tenant`:
+If you do not provide your own `deployment inputs` below, you must add these secrets to your Cloudify Manager `tenant`:
 
   * aws_access_key_id
   * aws_secret_access_key
@@ -32,9 +32,11 @@ If you do not override the default inputs during the `deployments create` phase 
 
 On your Cloudify Manager, navigate to `Local Blueprints` select `Upload`.
 
-Once you see the new blueprint, select `Deploy`.
+_Hint: You may provide the URL to the github archive, [right-click and copy URL](https://github.com/cloudify-examples/vpc-scenario2-blueprint/archive/master.zip), or download the archive and provide the archive as an attachment to upload._
 
-Navigate to `Deployments`, find your `deployment` select `Install` from the `workflow`'s menu. At this stage, provide your own values for any of the default `inputs` values.
+After the new blueprint has been created, select `Deploy`.
+
+Navigate to `Deployments`, find your new deployment, select `Install` from the `workflow`'s menu. At this stage, you may provide your own values for any of the default `deployment inputs`.
 
 
 ## Uninstallation
