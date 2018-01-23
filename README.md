@@ -16,7 +16,7 @@ Upload the required plugins:
 
   * [AWSSDK Plugin](https://github.com/cloudify-incubator/cloudify-awssdk-plugin/releases).
 
-**Check the blueprint for the exact version of the plugin.**
+_Check the blueprint for the exact version of the plugin._
 
 
 If you do not override the default inputs, these are required as secrets:
