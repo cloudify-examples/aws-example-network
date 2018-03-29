@@ -4,8 +4,8 @@ description: >
   Create an AWS VPC based on the Scenario 2 design.
 
 imports:
-  - http://www.getcloudify.org/spec/cloudify/4.2/types.yaml
-  - http://www.getcloudify.org/spec/awssdk-plugin/1.2.0.3/plugin.yaml
+  - http://www.getcloudify.org/spec/cloudify/4.3/types.yaml
+  - plugin:cloudify-awssdk-plugin
 
 inputs:
 
