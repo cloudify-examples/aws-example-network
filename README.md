@@ -20,7 +20,7 @@ Amazon's [VPC Scenario 2](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide
 ## Compatibility
 
 Tested with:
-  * Cloudify 4.2
+  * Cloudify 4.5
 
 
 ## Pre-installation steps
@@ -45,7 +45,7 @@ If you do not provide your own `deployment inputs` below, you must add these sec
 
 On your Cloudify Manager, navigate to `Local Blueprints` select `Upload`.
 
-[Right-click and copy URL](https://github.com/cloudify-examples/vpc-scenario2-blueprint/archive/master.zip). Paste where it says `Enter blueprint url`. Provide a blueprint name, such as `examples-network` in the field labeled `blueprint name`. Select `simple-blueprint.yaml` from `Blueprint filename` menu.
+[Right-click and copy URL](https://github.com/cloudify-examples/aws-example-network/archive/master.zip). Paste where it says `Enter blueprint url`. Provide a blueprint name, such as `examples-network` in the field labeled `blueprint name`. Select `simple-blueprint.yaml` from `Blueprint filename` menu.
 
 After the new blueprint has been created, click the `Deploy` button.
 
@@ -54,10 +54,18 @@ Navigate to `Deployments`, find your new deployment, select `Install` from the `
 
 ## Update Deployment
 
+### Stage 1
 In order to provide outbound internet access to the private subnet, you can update the deployment.
 
-Navigate to `Deployments`, find your deployment, click on it. Once the deployment's page has loaded, click the `Update Deployment` button. [Right-click and copy URL](https://github.com/cloudify-examples/vpc-scenario2-blueprint/archive/master.zip). Paste where it says `Enter new blueprint url`. This time, select `update-blueprint.yaml` from `Blueprint filename` menu.
+Navigate to `Deployments`, find your deployment, click on it. Once the deployment's page has loaded, click the `Update Deployment` button. [Right-click and copy URL](https://github.com/cloudify-examples/aws-example-network/archive/master.zip). Paste where it says `Enter new blueprint url`. This time, select `update-blueprint.yaml` from `Blueprint filename` menu.
 
+### Stage 2
+
+This update deployment stage will add support to the following:
+ - VPN Connection to old vpc `vpc_1` node
+ - VPC Peering between two vpc `vpc_1` & `vpc_2`
+
+Navigate to `Deployments`, find your deployment, click on it. Once the deployment's page has loaded, click the `Update Deployment` button. [Right-click and copy URL](https://github.com/cloudify-examples/aws-example-network/archive/master.zip). Paste where it says `Enter new blueprint url`. This time, select `vpc-peering-blueprint.yaml` from `Blueprint filename` menu.
 
 ## Uninstallation
 
